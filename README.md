@@ -36,45 +36,69 @@ This project aims to detect **fine-grained emotional states**, addressing key li
 
 Follow these steps to run the console application locally.
 
-1️⃣ Clone the repository
+---
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/Seda-turkoz/fine-grained-sentiment-analysis-console-app.git
 cd fine-grained-sentiment-analysis-console-app
+```
 
-2️⃣ Create and activate a virtual environment
+---
 
-Windows:
+### 2️⃣ Create and activate a virtual environment
 
+**Windows:**
+
+```bash
 python -m venv .venv
 .\.venv\Scripts\activate
+```
 
+**macOS/Linux:**
 
-macOS/Linux:
-
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-3️⃣ Install dependencies
+---
+
+### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Run the console app
+---
+
+### 4️⃣ Run the console app
+
+```bash
 python main.py
-
+```
 
 You will see:
 
+```
 ========= Emotion Detection Console App =========
 1. Rule-Based Emotion Detection
 2. Logistic Regression Classifier
 3. MLP Classifier
 4. Logistic Regression with Attribution Filter
 5. Exit
+```
 
-5️⃣ (Optional) Re-generate embeddings or retrain models
+---
+
+### 5️⃣ (Optional) Re-generate embeddings or retrain models
+
+```bash
 python ai_based/embedding_pipeline.py
 python ai_based/logistic_regression/train_logistic_regression.py
 python ai_based/mlp/train_mlp_classifier.py
-
-
+```
 ---
 
 ## 🧩 3. Project Features
