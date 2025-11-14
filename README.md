@@ -32,8 +32,52 @@ This project aims to detect **fine-grained emotional states**, addressing key li
 - → Difficulty in detecting subtle, multi-label emotions  
 
 ---
+## ▶️ 2. How to Run the Project (Setup & Execution)
 
-## 🧩 2. Project Features
+Follow these steps to run the console application locally.
+
+1️⃣ Clone the repository
+git clone https://github.com/Seda-turkoz/fine-grained-sentiment-analysis-console-app.git
+cd fine-grained-sentiment-analysis-console-app
+
+2️⃣ Create and activate a virtual environment
+
+Windows:
+
+python -m venv .venv
+.\.venv\Scripts\activate
+
+
+macOS/Linux:
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Run the console app
+python main.py
+
+
+You will see:
+
+========= Emotion Detection Console App =========
+1. Rule-Based Emotion Detection
+2. Logistic Regression Classifier
+3. MLP Classifier
+4. Logistic Regression with Attribution Filter
+5. Exit
+
+5️⃣ (Optional) Re-generate embeddings or retrain models
+python ai_based/embedding_pipeline.py
+python ai_based/logistic_regression/train_logistic_regression.py
+python ai_based/mlp/train_mlp_classifier.py
+
+
+---
+
+## 🧩 3. Project Features
 
 ### ✔️ Rule-Based Emotion Detection  
 - 12-emotion custom taxonomy  
@@ -87,7 +131,7 @@ Each option allows you to run a different emotion analysis module:
 
 ---
 
-## 🧱 3. Tech Stack
+## 🧱 4. Tech Stack
 
 | Component | Technology |
 |----------|------------|
@@ -100,7 +144,7 @@ Each option allows you to run a different emotion analysis module:
 
 ---
 
-## 📂 4. Project Structure
+## 📂 5. Project Structure
 
 📦 fine-grained-sentiment-analysis-console-app
 ┣ 📄 main.py     # Console menu interface
@@ -119,7 +163,7 @@ Each option allows you to run a different emotion analysis module:
 ---
 
 
-## 📊 5. Example Output: Logistic Regression vs Logistic Regression + Attribution Filter
+## 📊 6. Example Output: Logistic Regression vs Logistic Regression + Attribution Filter
 
 The following example demonstrates how the **baseline Logistic Regression classifier**
 and the **Attribution Filter–enhanced version** behave differently when the input text
@@ -165,7 +209,7 @@ Predicted Emotions (Logistic Regression w Filtered): ['nervousness']
 
 ---
 
-## 📈 6. Experimental Results (Summary)
+## 📈 7. Experimental Results (Summary)
 
 ### 🔹 Logistic Regression
 - **Accuracy:** ~33%  
@@ -189,7 +233,7 @@ Predicted Emotions (Logistic Regression w Filtered): ['nervousness']
 
 ---
 
-## 🚀 7. Future Development
+## 🚀 8. Future Development
 
 This repository represents the **research phase** of the project.  
 Future plans include:
@@ -216,7 +260,7 @@ A separate repository will implement a Flutter app with:
 ---
 
 
-## 🔐 8. Ethical & Privacy Considerations
+## 🔐 9. Ethical & Privacy Considerations
 
 This project was developed strictly for academic and research purposes as part of a university thesis.  
 No real patient or user data is collected, processed, or stored at any stage of development.
@@ -232,7 +276,7 @@ Human oversight and domain expertise remain essential in any real-world applicat
 
 
 
-## 👩‍💻 9. Author
+## 👩‍💻 10. Author
 
 **Seda Türköz**  
 Mobile Developer (Flutter / .NET Core) & NLP Researcher  
@@ -244,7 +288,7 @@ GitHub: https://github.com/Seda-turkoz
 
 ---
 
-## 📄 10. License
+## 📄 11. License
 
 **MIT License**  
 Free for academic, research, and personal use.
